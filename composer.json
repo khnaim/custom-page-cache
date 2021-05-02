@@ -1,0 +1,30 @@
+{
+    "name": "khnaim/module-custom-page-cache",
+    "description": "Add excluding parameter to page cache in order to have the same cache key",
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Khadija NAIM",
+            "email": "khaitchrif@gmail.com"
+        }
+    ],
+    "version": "1.0.0",
+    "require": {
+        "php": "~7.4.0",
+        "magento/framework": "*",
+        "magento/module-page-cache": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Khnaim\\CustomPageCache\\": ""
+        }
+    }
+}
+

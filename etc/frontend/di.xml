@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright (c) 2021  All Rights Reserved.
+ * https://opensource.org/licenses/OSL-3.0  Open Software License (OSL 3.0)
+ * <khaitchrif@gmail.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+ <!-- Add excluding parameter to page cache in order to have the same cache key-->
+    <type name="Magento\Framework\App\PageCache\Identifier">
+        <plugin name="khnaim-customer-page-cache-whitelist" type="Khnaim\CustomPageCache\Plugin\App\PageCache\Identifier" />
+    </type>
+</config>

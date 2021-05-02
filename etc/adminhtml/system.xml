@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright (c) 2021  All Rights Reserved.
+ * https://opensource.org/licenses/OSL-3.0  Open Software License (OSL 3.0)
+ * <khaitchrif@gmail.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="custom_page_cache" translate="label" sortOrder="0">
+            <label>Khnaim</label>
+        </tab>
+        <section id="custom_page_cache" translate="label" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Custom Page Cache Settings</label>
+            <tab>custom_page_cache</tab>
+            <resource>Khnaim_CustomPageCache::settings</resource>
+            <group id="settings" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Custom Page Cache Whitelist</label>
+                <field id="whitelist" translate="label" sortOrder="0" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Page Cache Whitelist</label>
+                    <frontend_model>Khnaim\CustomPageCache\Block\Adminhtml\Config\Form\Field\Whitelist</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                    <comment><![CDATA[Excluding parameter from page cache in order to have the same cache key]]></comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

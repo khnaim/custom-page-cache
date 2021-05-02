@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright (c) 2021  All Rights Reserved.
+ * https://opensource.org/licenses/OSL-3.0  Open Software License (OSL 3.0)
+ * <khaitchrif@gmail.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Khnaim_CustomPageCache">
+        <sequence>
+            <module name="Magento_PageCache"/>
+        </sequence>
+    </module>
+</config>
