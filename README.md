@@ -2,7 +2,6 @@
 Add excluding parameter to page cache in order to have the same cache key
 
 ## Installation
-- Require the extension: `composer require "khnaim/module-custom-page-cache"`
 - composer config repositories.khnaim.custom-page-cache git "https://github.com/khnaim/module-custom-page-cache.git"
 - composer require khnai/module-custom-page-cache
 - php bin/magento module:enable Khnaim_CustomPageCache
